@@ -1,0 +1,241 @@
+*{
+    font-family: montserrat;
+}
+body{
+    overflow-x: hidden;
+    height: 99vh;
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: orange;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+    padding-bottom: 35px;
+    max-height: 550px;
+    min-height: 550px;
+    max-width: 300px;
+    min-width: 290px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 2px 2px 30px #000000c5 ;
+}
+/* INDEX | WELCOME PAGE */
+#wlc-img{
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(to bottom, #0245ff, #fff);
+}
+ #wlc-h1 {
+    text-align: center;
+}
+#wlc-msg {
+    text-align: center;
+}
+ #wlc-btn {
+    text-align: center;
+    text-decoration: none;
+}
+#wlc-btn{
+    background-color: #0245ff;
+    border: solid transparent;
+    width: 75%;
+    height: fit-content;
+    padding: 3px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+}
+/*-------- HOME PAGE ---------*/
+#home-main{
+    justify-content: flex-start;
+    padding: 0%;
+}
+#top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px red solid; */
+    width: 90%;
+    margin: 3%;
+    max-height: 10%;
+    padding: 0%;
+    padding-right: 5px;
+}
+#home-logo{
+    width: 19%;
+    height: 80%;
+    /* border: solid; */
+}
+#top h2{
+    text-transform: capitalize;
+    font-size: 22px;
+    letter-spacing: -1px;
+}
+/* BLUE BOX FOR DISPLAY */
+#info-section{
+    border: none;
+    width: 90%;
+    height: 22%;
+    background: linear-gradient(to right, #0245ff, #587ce07a);
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+#todays-task{
+    display: flex;
+    flex-direction: column;
+    background-color: #e9e8e8a2;
+    height: 65%;
+    width: 90%;
+}
+
+#bottom-nav{
+width: 100%;
+border: 1.5px solid #00000023;
+height: 10%;
+}
+
+#see-all{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 5px;
+    border: none;
+    border-bottom: solid 1px #00000027;
+    height: 5%;
+    text-transform: capitalize;
+
+}
+
+#see-all a{
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* DISPLAY FOR ALL AVAILABLE TASKS */
+#tasks{
+    display: inline;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 95%;
+    max-height: 200vh;
+    text-align: center;
+    overflow-y: hidden, scroll;
+}
+
+#bottom-nav{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#bottom-nav .span{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#add-task{
+    position: relative;
+    bottom: 50%;
+    width: 19%;
+    height: 100%;
+}
+#add-task button{
+    border: none;
+    /* background-color: #0245ff; */
+    width: 100%;
+    background: radial-gradient( #6684d6, #0245ff);
+    height: 100%;
+    font-weight: 450;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 40px;
+}
+#add-task button a{
+    color: #fff;
+    text-decoration: none;
+}
+/* ADDING A NEW TASK */
+.new-task-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 99%;
+    height: 20%;
+    margin-bottom: 7px;
+    border-radius: 10px;
+    border: solid 1px #00000023;
+    background-color: #fff;
+}
+.info-div {
+    width: 85%;
+    /* border: solid 1px; */
+    display: flex;
+}
+#more{
+    width: 15%;
+}
+#category-img{
+    /* border: 1px solid red; */
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-div{
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px violet; */
+    height: 100%;
+    width: 75%;
+}
+.task-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    /* border: 1px solid; */
+    width: 100%;
+    font-weight: 550;
+    height: 50%;
+    text-align: left;
+
+}
+.task-date{
+    display: flex;
+    justify-content: left;
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    text-align: left;
+}
+.time{
+    font-weight: 500;
+    font-size: 13px;   
+    padding-left: 10px; 
+}
+.date{
+    font-size: 13px;  
+    font-weight: 500;
+    padding-right: 10px;
+}
+#more{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 20px;
+    overflow: hidden;
+}
