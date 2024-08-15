@@ -239,3 +239,23 @@ height: 10%;
     font-size: 20px;
     overflow: hidden;
 }
+/* CREATE NEW TASK HTML */
+#new-task-main{
+    justify-content: center;
+    align-items: center;
+}
+form{
+    margin-top: 20px;
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    height: 100%;
+    justify-content: space-around;
+}
+form span{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
