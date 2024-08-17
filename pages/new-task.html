@@ -9,36 +9,34 @@
 </head>
 <body>
     <main id="new-task-main">
-        <form action="" method="post">
+        <form  id="userForm">
             <span id="form1">
-                <a href="">
-                    <button>
-                        <
-                    </button>
+                <a href="./home.html">
+                        <img src="../src/img/icons8-expand-arrow-50.png" alt="." class="arrow-left">
                 </a>
-                <h2>Create New Task</h1>
+                <h3>Create New Task</h3>
             </span>
-            <h3>
+            <h3 class="form-h3">
                 Task Name
             </h3>
-            <input type="text">
-            <h3>Category</h3>
-            <span>
-                <div class="cat-png"></div>
-                <div class="cat-png"></div>
-                <div class="cat-png"></div>
+            <input type="text" id="taskName">
+            <h3 class="form-h3">Category</h3>
+            <span id="form-cat">
+                <button onclick="categorySelect()" id="cat-png">personal</button>
+                <button onclick="categorySelect()" id="cat-png">work</button>
+                <button onclick="categorySelect()" id="cat-png">home</button>
             </span>
-            <h3>Date & Time</h3>
+            <h3 class="form-h3">Date & Time</h3>
             <input type="date" name="date" id="date">
             <span>
-                <h3>Start Time</h3>
-                <h3>End Time</h3>
+                <h4>Start Time</h4>
+                <h4>End Time</h4>
             </span>
-            <span>
+            <span id="form-3">
                 <input type="time" name="start-time" id="start-time">
                 <input type="time" name="end-time" id="end-time">
             </span>
-            <h3>Description</h3>
+            <h3 class="form-h3">Description</h3>
             <input type="text" name="description" id="description">
             <br>
             <input type="submit" value="Create Task">
